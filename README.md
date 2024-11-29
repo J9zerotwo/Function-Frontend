@@ -1,12 +1,67 @@
-# Starter Next/Hardhat Project
+# ATM & Savings & Investment System
 
-After cloning the github, you will want to do the following to get the code running on your computer.
+This is a decentralized application (DApp) that allows users to interact with an ATM-like system using Ethereum. Users can deposit and withdraw funds from their ATM balance, savings account, and investment account through a smart contract on the Ethereum blockchain.
 
-1. Inside the project directory, in the terminal type: npm i
-2. Open two additional terminals in your VS code
-3. In the second terminal type: npx hardhat node
-4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
-5. Back in the first terminal, type npm run dev to launch the front-end.
+## Features
+- **ATM Balance**: Deposit and withdraw funds in your ATM balance.
+- **Savings Balance**: Deposit and withdraw funds into/from your savings account.
+- **Investment Balance**: Deposit and withdraw funds into/from your investment account.
+- **Account Privacy**: Toggle the visibility of your Ethereum account address for privacy.
 
-After this, the project will be running on your localhost. 
-Typically at http://localhost:3000/
+## Tech Stack
+- **Smart Contract**: Solidity (Ethereum)
+- **Frontend**: React, Next.js
+- **Blockchain**: Ethereum, MetaMask (for connecting to the blockchain)
+- **Web3**: Ethers.js
+
+## Setup & Installation
+
+### Prerequisites
+- **MetaMask** wallet extension installed in your browser.
+- **Node.js** and **npm** installed.
+- **Ethereum** account with some Ether for transactions (you can use testnets for development).
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/atm-savings-investment-system.git
+cd atm-savings-investment-system
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Deploy Smart Contract
+
+To deploy the smart contract, you’ll need an Ethereum wallet (e.g., MetaMask) and a testnet like **Rinkeby** or **Goerli** for development.
+
+- Compile and deploy the smart contract using **Remix IDE** or **Hardhat**.
+
+For example, with Hardhat:
+```bash
+npx hardhat run scripts/deploy.js --network rinkeby
+```
+
+Make sure to update the `contractAddress` in the `index.js` file with the address of the deployed contract.
+
+### 4. Run the Frontend
+
+To start the DApp, run the following command:
+```bash
+npm run dev
+```
+
+This will start a local development server at `http://localhost:3000`. Open it in your browser, and the application should be ready for use.
+
+### 5. Interacting with the DApp
+
+1. **Connect your MetaMask Wallet**: Click the "Connect MetaMask Wallet" button. This will prompt MetaMask to allow you to connect your Ethereum account to the DApp.
+2. **Deposit/Withdraw funds**: 
+   - Deposit funds into your ATM balance, savings account, or investment account.
+   - Withdraw funds from any of the three accounts.
+3. **Account Privacy**: Toggle the visibility of your Ethereum account address by clicking the eye icon next to "Your Account".
+
+### Here's the preview of the page:
+
+![image](https://github.com/user-attachments/assets/b671aa51-adfc-4dd3-8353-0fbfa91874fa)
