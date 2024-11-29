@@ -64,4 +64,4 @@ This will start a local development server at `http://localhost:3000`. Open it i
 
 ### Here's the preview of the page:
 
-![image](https://github.com/user-attachments/assets/b671aa51-adfc-4dd3-8353-0fbfa91874fa)
+![image](https://github.com/user-attachments/assets/a3d14fcb-4dd9-426c-a7dc-b96926d51af7)
